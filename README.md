@@ -14,7 +14,7 @@ A simple web application that allows users to generate color schemes based on a 
   - Analogic-complement
   - Triad
 - Displays generated color palettes with hex codes
-- Copy hex codes with a click (functionality to be implemented)
+- Copy hex codes with a click
 
 ## Technologies Used
 
@@ -22,6 +22,9 @@ A simple web application that allows users to generate color schemes based on a 
 - CSS3
 - JavaScript
 - External Color API
+
+## Live Link
+https://colorrrrpicker.netlify.app/
 
 ## How to Use
 
