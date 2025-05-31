@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <title>Color Scheme Generator</title>
+    </head>
+    <body>
+        <h1 id="title" aria-label="title">Color Scheme Generator</h1>
+        <div id="main-box">
+                <form id="color-picker">
+                    <input type="color" id="color" name="color">
+                    <select name="scheme" id="scheme" aria-label="mode">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
+                    </select>
+                    <button type="submit">Get Color Scheme</button>
+                </form>
+        <div id="color-scheme">
+        <div id="color-hex"><div style="height: 22rem; background-color: rgb(223, 82, 82);" ></div><h4>#df5252</h4></div>
+        <div id="color-hex"><div style="height: 22rem; background-color: rgb(139, 9, 9);" ></div><h4>#didjf</h4></div>
+        <div id="color-hex"><div style="height: 22rem; background-color: rgb(204, 156, 156);" ></div><h4>#dokpsf</h4></div>
+        <div id="color-hex"><div style="height: 22rem; background-color: rgb(65, 21, 21);" ></div><h4>#lfksjd</h4></div>
+        <div id="color-hex"><div style="height: 22rem; background-color: rgb(255, 0, 0);" ></div><h4>#df5252</h4></div>
+    
+        </div>
+        </div>
+        <script src="/script.js"></script>
+    </body>
+</html>

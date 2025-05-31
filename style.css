@@ -1,0 +1,136 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Open Sans", sans-serif;
+
+}
+
+h1 {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+#main-box{
+    margin: 0 auto;
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+#color-picker {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;     
+}
+
+#color-picker input {
+    height: 2.3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+
+}
+
+#color-picker select {
+    height: 2.3rem;
+    width: auto;
+    padding: 2px;
+    border-radius: 0.5rem;
+}
+
+#color-picker button {
+    height: 2.3rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#color-scheme {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+
+.color-hex {
+    cursor: pointer;
+}
+
+.color-hex h4 {
+    padding: 0.5rem; /* Reduced padding to prevent overflow */
+    text-align: center;
+    word-wrap: break-word; /* Handle long hex values */
+    font-size: 0.9rem; /* Make text slightly smaller if needed */
+}
+
+
+@media (max-width: 600px) {
+    #color-scheme {
+        grid-template-columns: repeat(5, 1fr);
+        
+    }
+    
+    #color-picker {
+        gap: 2px;
+    }
+    
+    #main-box {
+        width: 95%;
+    }
+    #color-picker input {
+    height: 1.8rem;
+    width: 2rem;
+    border-radius: 0.5rem;
+
+}
+.color-hex h4 {
+    text-align: center;
+    word-wrap: break-word; 
+    font-size: 0.8rem; 
+}
+
+#color-picker select {
+    height: 2.3rem;
+    width: 6rem;
+    padding: 2px;
+    border-radius: 0.5rem;
+}
+.color-hex h4{
+     padding: 0.5rem;
+}
+
+h1 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+}
+
+@media (max-width: 400px) {
+
+    
+    #color-scheme {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .color-hex div {
+        min-height: 60px;
+    }
+      #color-picker input select{
+        padding: 20px;
+    }
+    
+}
